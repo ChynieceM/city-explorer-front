@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# city-explorer-api
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Author**: Chyniece Matthews
+**Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
 
-## Available Scripts
+## Overview
+This app is a simple weather app built with React that allows a user to search for weather information by city name. The app uses Axios to fetch data from a weather API, and updates the interface based on the data received. The user can enter a city name in a form input field, and when they click on the Explore button, the app makes a request to the weather API and updates the webpage with the weather information for the specified city. The weather information is displayed in a Weather component, which receives the data as props. This app also includes error handling for cases where a user enters an invalid city name or there is an issue with the API request.
 
-In the project directory, you can run:
+## Getting Started
+To build and run this app on their own machine, a user should:
 
-### `npm start`
+1. Make sure that Node.js and npm are installed on their machine.
+2. Clone or download the project repository from a code hosting platform such as GitHub.
+3. Navigate to the project directory in their terminal or command prompt.
+Run the command `"npm install"` to install all the necessary dependencies.
+4. Run the command "npm start" to start the development server and launch the app in a browser.
+6. If everything is set up correctly, the app should now be running on the local server at `http://localhost:3000/.`
+7. Note: The app requires a backend server running at `http://localhost:3001/` to fetch data from the weather API. The instructions for setting up the backend server is included in the project documentation.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Architecture
+The application is a simple weather app that allows users to search for weather information about a particular city. It is built using the following:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React: A JavaScript library for building user interfaces
+- Bootstrap: A front-end CSS framework for building responsive web pages
+- Axios: A promise-based HTTP client for making HTTP requests from the browser
+- OpenWeatherMap API: An API that provides weather information based on city names or geographic coordinates.
+- The app consists of a single-page interface that allows the user to enter a city name in a search bar. When the user submits the search, the app makes a GET request to the OpenWeatherMap API using the Axios library, passing the city name as a parameter. The API returns a JSON object containing weather information about the city, which is then parsed and displayed to the user on the same page.
 
-### `npm test`
+- The main App component uses the useState and useEffect hooks to manage state and fetch data from the API. The Weather component is a child component of the App component, and is responsible for rendering the weather data returned from the API.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- The styling of the app is done using the Bootstrap CSS framework, and some customer CSS as well. 
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Change Log
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Credit and Collaborations
+`https://www.grabient.com/`
+`https://react-bootstrap.github.io/components/modal/`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Name of feature: Front-end: Weather info for the city I searched
 
-### `npm run eject`
+Estimate of time needed to complete: 1 day
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Start time: 2:00 pm
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Finish time: 5:30 pm
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Actual time needed to complete: 3.5 hours
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Name of feature: Front-end: clear messages if something goes wrong
 
-## Learn More
+Estimate of time needed to complete: 1 day
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Start time: 8:15 pm
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Finish time: 10:15 pm
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Actual time needed to complete: 2 hours
